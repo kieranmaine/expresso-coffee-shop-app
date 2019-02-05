@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
-//app.use(morgan("tiny"));
+app.use(morgan("tiny"));
 app.use(cors());
 
 app.use(express.static('public'))
